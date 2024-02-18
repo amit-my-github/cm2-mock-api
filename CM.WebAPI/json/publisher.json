@@ -1,0 +1,300 @@
+{
+    "publishers": [
+        {
+            "id": 3,
+            "name": "Ars Aequi",
+            "status": "Y",
+            "lastModified": "2012-01-17T16:43:10.207",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 21,
+            "name": "Baltzer Science Publishers",
+            "status": "N",
+            "lastModified": "2019-08-29T16:43:31.487",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 8,
+            "name": "Berghauser Pont",
+            "status": "Y",
+            "lastModified": "2012-01-17T16:43:10.207",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 24,
+            "name": "Berkeley Bridge",
+            "status": "Y",
+            "lastModified": "2019-08-29T16:44:33.197",
+            "dateCreated": "2012-11-13T14:51:19.7",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 7,
+            "name": "BJu",
+            "status": "Y",
+            "lastModified": "2021-01-25T11:14:30.647",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 100010,
+            "name": "Celsus",
+            "status": "Y",
+            "lastModified": "2022-02-15T10:15:26.95",
+            "dateCreated": "2022-02-15T10:14:54.647",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 33,
+            "name": "CROW",
+            "status": "Y",
+            "lastModified": "2014-12-18T16:32:05.867",
+            "dateCreated": "2014-12-18T16:32:06.193",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 26,
+            "name": "Defence for Children",
+            "status": "Y",
+            "lastModified": "2012-12-06T13:33:40.827",
+            "dateCreated": "2012-12-06T13:33:27.65",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 11,
+            "name": "deLex",
+            "status": "Y",
+            "lastModified": "2012-01-17T16:43:10.207",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 6,
+            "name": "Den Hollander",
+            "status": "Y",
+            "lastModified": "2012-01-17T16:43:10.207",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 10,
+            "name": "Diversen",
+            "status": "Y",
+            "lastModified": "2012-01-17T16:43:10.207",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 23,
+            "name": "Elsevier",
+            "status": "Y",
+            "lastModified": "2019-11-07T12:27:55.45",
+            "dateCreated": "2012-06-20T10:51:47.693",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 100008,
+            "name": "FBN Juristen",
+            "status": "Y",
+            "lastModified": "2021-11-11T09:00:42.783",
+            "dateCreated": "2021-06-30T14:03:27.277",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 100006,
+            "name": "Grensoverschrijdend werken",
+            "status": "Y",
+            "lastModified": "2021-03-24T09:03:11.943",
+            "dateCreated": "2020-11-30T13:38:16.037",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 13,
+            "name": "IBR",
+            "status": "Y",
+            "lastModified": "2012-01-17T16:43:10.207",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 36,
+            "name": "Intersentia",
+            "status": "Y",
+            "lastModified": "2015-05-21T13:42:19.837",
+            "dateCreated": "2015-05-21T13:42:19.853",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 15,
+            "name": "Kluwer Law International",
+            "status": "Y",
+            "lastModified": "2012-01-17T16:43:10.207",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 20,
+            "name": "KSU",
+            "status": "N",
+            "lastModified": "2019-08-29T16:45:47.823",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 100001,
+            "name": "M.A.D.Lex",
+            "status": "Y",
+            "lastModified": "2020-02-25T10:02:47.57",
+            "dateCreated": "2020-02-25T10:02:47.573",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 34,
+            "name": "Maklu Uitgevers",
+            "status": "Y",
+            "lastModified": "2020-10-01T13:53:47.67",
+            "dateCreated": "2015-02-04T10:43:25.347",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 44,
+            "name": "MOCuitgevers",
+            "status": "Y",
+            "lastModified": "2020-02-12T10:33:22.273",
+            "dateCreated": "2019-10-24T10:07:27.413",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 2,
+            "name": "Nextens",
+            "status": "Y",
+            "lastModified": "2021-03-15T11:14:22.553",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 100003,
+            "name": "NLFiscaal",
+            "status": "Y",
+            "lastModified": "2020-06-19T10:11:26.307",
+            "dateCreated": "2020-06-19T10:11:26.307",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 5,
+            "name": "Paris",
+            "status": "Y",
+            "lastModified": "2012-01-17T16:43:10.207",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 19,
+            "name": "Rendement",
+            "status": "Y",
+            "lastModified": "2020-03-17T08:40:13.13",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 4,
+            "name": "SDU",
+            "status": "Y",
+            "lastModified": "2012-01-17T16:43:10.207",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 22,
+            "name": "SDU (NDFR)",
+            "status": "Y",
+            "lastModified": "2012-01-17T16:43:10.207",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 12,
+            "name": "SFFU",
+            "status": "N",
+            "lastModified": "2019-08-29T16:46:13.39",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 39,
+            "name": "Stibbe",
+            "status": "Y",
+            "lastModified": "2016-09-13T15:38:46.67",
+            "dateCreated": "2016-09-13T15:38:46.617",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 100007,
+            "name": "Sweet & Maxwell",
+            "status": "Y",
+            "lastModified": "2021-01-13T17:02:34.273",
+            "dateCreated": "2021-01-13T17:02:34.277",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 42,
+            "name": "Symphony",
+            "status": "Y",
+            "lastModified": "2019-07-29T12:02:55.453",
+            "dateCreated": "2017-02-10T13:42:15.477",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 100000,
+            "name": "T.M.C. Asser Press",
+            "status": "Y",
+            "lastModified": "2020-02-14T10:10:17.177",
+            "dateCreated": "2020-02-14T10:10:17.18",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 100002,
+            "name": "Test",
+            "status": "Y",
+            "lastModified": "2020-04-16T19:14:04.407",
+            "dateCreated": "2020-04-16T19:14:04.407",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 100009,
+            "name": "TEST Publisher",
+            "status": "N",
+            "lastModified": "2022-01-26T16:45:17.36",
+            "dateCreated": "2022-01-26T16:45:17.36",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 29,
+            "name": "Vakmedianet",
+            "status": "Y",
+            "lastModified": "2019-07-29T10:17:12.123",
+            "dateCreated": "2014-02-12T17:11:25.437",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 100004,
+            "name": "Wolf Legal Publishers",
+            "status": "Y",
+            "lastModified": "2020-08-05T10:17:44.13",
+            "dateCreated": "2020-08-05T10:17:44.133",
+            "notes": "This is tested dummy notes"
+        },
+        {
+            "id": 1,
+            "name": "Wolters Kluwer",
+            "status": "Y",
+            "lastModified": "2021-05-19T11:39:15.68",
+            "dateCreated": "2012-01-17T16:43:10.183",
+            "notes": "This is tested dummy notes"
+        }
+    ]
+}

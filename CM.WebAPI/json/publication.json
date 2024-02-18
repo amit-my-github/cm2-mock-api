@@ -1,0 +1,84 @@
+{
+  "title": {
+    "publicationTitleId": 29211,
+    "displayCode": "TvAR",
+    "type": "JOURNAL",
+    "dateCreated": "2023-03-09 08:51:17",
+    "lastModified": "2023-03-09 08:51:17",
+    "accessCode": "AUP_TVAR",
+    "externalCode": [
+      "TvAR_AUP"
+    ],
+    "thesaurusSynonyms": [
+      "TvAR"
+    ],
+    "name": "Tijdschrift voor Agrarisch Recht",
+    "notes": "Some notes"
+  },
+  "categories": {
+    "instantie": {
+      "categoryId": 1,
+      "value": "someValue"
+    },
+    "lawAreas": [
+      {
+        "categoryId": 470747,
+        "value": "Ruimtelijk Bestuursrecht/Milieurecht/Energierecht"
+      },
+      {
+        "categoryId": 470748,
+        "value": "Ruimtelijk Bestuursrecht"
+      }
+    ]
+  },
+  "publicationTitleRelations": {
+    "partOf": {
+      "publicationTitlesId": 110,
+      "displayCode": "Asser Serie",
+      "type": "REF_GUIDE",
+      "accessCode": "KLU_OVERTHE"
+    },
+    "titleOf": [
+      {
+        "publicationTitlesId": 549,
+        "displayCode": "Asser (bzo) 5-I (Archief 2007) Koop en ruil",
+        "type": "REF_GUIDE",
+        "accessCode": "KLU_Ass_5I_2007_NW"
+      },
+      {
+        "publicationTitlesId": 550,
+        "displayCode": "Asser 7-II Huur",
+        "type": "REF_GUIDE",
+        "accessCode": "KLU_Ass_7II_NW"
+      }
+    ],
+    "givesAccessTo": [
+      {
+        "publicationTitlesId": 4147,
+        "displayCode": "Fiscale thema's",
+        "type": "REF_GUIDE",
+        "accessCode": "KLU_PRAKTA__FULL_NW"
+      },
+      {
+        "publicationTitlesId": 6582,
+        "displayCode": "Overheid thema's",
+        "type": "REF_GUIDE",
+        "accessCode": "KLU_OVERTHE"
+      }
+    ],
+    "accessedVia": [
+      {
+        "publicationTitlesId": 1951,
+        "displayCode": "All WKNL content (PCK)",
+        "type": "COLLECTION",
+        "accessCode": "KLU_ALL"
+      },
+      {
+        "publicationTitlesId": 1946,
+        "displayCode": "Asser-serie Burgerlijk (proces)recht (serie)\t",
+        "type": "COLLECTION",
+        "accessCode": "KLU_Ass_Burg_Proces_Serie_NW"
+      }
+    ]
+  }
+}

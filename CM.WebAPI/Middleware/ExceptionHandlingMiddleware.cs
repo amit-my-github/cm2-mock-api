@@ -1,0 +1,38 @@
+﻿using System.Net;
+using System.Text.Json;
+
+namespace CM.WebAPI.Middleware
+{
+
+    public class ExceptionHandlingMiddleware
+    {
+        private RequestDelegate requestDelegate;
+        public ExceptionHandlingMiddleware(RequestDelegate requestDelegate)
+        {
+
+            this.requestDelegate = requestDelegate;
+        }
+        public async Task Invoke(HttpContext context)
+
+        {
+            try
+            {
+                await requestDelegate(context);
+            }
+            catch (Exception ex)
+            {
+                await HandleException(context, ex);
+            }
+        }
+
+        private static Task HandleException(HttpContext context, Exception ex)
+        {
+            var errorMessage = JsonSerializer.Serialize(new { Message = ex.Message, Code = "GE" });
+            context.Response.ContentType = "application/json";
+            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+            return context.Response.WriteAsync(errorMessage);
+        }
+
+    }
+
+}
