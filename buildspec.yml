@@ -1,1 +1,21 @@
-﻿
+﻿version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: 7.0
+    commands:
+      - echo Using built-in .NET SDK 7.0
+  build:
+    commands:
+      - echo Building the ASP.NET Core Web API...
+      - dotnet restore Content.Manager.Core.WebApi.csproj
+      - dotnet publish Content.Manager.Core.WebApi.csproj -c Release -o output
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+artifacts:
+  base-directory: output
+  files:
+    - '**/*'
