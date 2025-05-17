@@ -1,5 +1,10 @@
 ﻿version: 0.2
 
+env:
+  variables:
+    HOME: "/root"
+    DOTNET_CLI_HOME: "/root"
+
 phases:
   install:
     runtime-versions:
