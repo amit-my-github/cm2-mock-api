@@ -1,0 +1,41 @@
+{
+    "type": "Test-Type",
+    "name": "Test-Name",
+    "displayCode": "Test-displayCode",
+    "accessCodeId": 123456789,
+    "isExcludeFromAllInSubscription": true,
+    "isDisplayOnAccessRightsPage": true,
+    "status": "Y",
+    "isbn": "123456789",
+    "externalCodes": [
+        {
+            "code": "code-1",
+            "isPrimary": true
+        }
+    ],
+    "isPowerFilter": true,
+    "thesaurus": [
+        "thesaurus-1"
+    ],
+    "monitorLimit": 0,
+    "isReference": true,
+    "isOverAllTitle": true,
+    "hasParts": true,
+    "partOf": null,
+    "feedUrl": "feedUrl-1",
+    "contentsUrl": "contentsUrl-2",
+    "inSourcePage": true,
+    "publicationStart": "19650101",
+    "embargoDate": "2020-05-25 00:00:00.000",
+    "publicationEnd": "20161231",
+    "pubAvailabilityInBasicService": "pubAvailabilityInBasicService-1",
+    "publicationOrderInformation": "publicationOrderInformation-2",
+    "publicationSpecialFeatures": "publicationSpecialFeatures-3",
+    "publicationDescription": "publicationDescription-4",
+    "notes": "notes-1",
+    "dateCreated": "2023-01-01T00:00:00",
+    "lastModified": "2023-01-01T00:00:00",
+    "publisherID": 1,
+    "id": 10,
+    "accessCode": "Test-accessCode"
+}
