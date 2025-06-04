@@ -16,9 +16,12 @@ phases:
       - echo Building the ASP.NET Core Web API...
       - dotnet restore Content.Manager.Core.WebApi.csproj
       - dotnet publish Content.Manager.Core.WebApi.csproj -c Release -o output
+      - mkdir -p output/scripts
+      - cp scripts/*.sh output/scripts/
   post_build:
     commands:
       - echo Build completed on `date`
+      - chmod +x output/scripts/*.sh
 
 artifacts:
   base-directory: output
