@@ -1,31 +1,27 @@
 ﻿version: 0.2
 
-env:
-  variables:
-    HOME: "/root"
-    DOTNET_CLI_HOME: "/root"
-
 phases:
   install:
     runtime-versions:
       dotnet: 7.0
     commands:
-      - echo Using built-in .NET SDK 7.0
+      - echo Using .NET SDK 7.0
 
   build:
     commands:
-      - echo Building the ASP.NET Core Web API...
+      - echo Building ASP.NET Core Web API...
       - dotnet restore Content.Manager.Core.WebApi.csproj
-      - dotnet publish Content.Manager.Core.WebApi.csproj -c Release -o .
+      - dotnet publish Content.Manager.Core.WebApi.csproj -c Release -o output
       - echo Copying scripts...
-      - mkdir -p scripts
-      - cp scripts/*.sh ./scripts/
+      - mkdir -p output/scripts
+      - cp scripts/*.sh output/scripts/
 
   post_build:
     commands:
       - echo Build completed on `date`
-      - chmod +x scripts/*.sh
+      - chmod +x output/scripts/*.sh
 
 artifacts:
+  base-directory: output
   files:
     - '**/*'
