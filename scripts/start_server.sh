@@ -3,7 +3,7 @@ APP_PATH="/var/www/myapp/Content.Manager.Core.WebApi.dll"
 LOG_FILE="/var/log/myapp.log"
 PID_FILE="/var/run/myapp.pid"
 
-echo "Starting ASP.NET Core Web API..."
+echo "Starting ASP.NET Core Web API...."
 
 if [ -f "$PID_FILE" ] && kill -0 $(cat "$PID_FILE") 2>/dev/null; then
     echo "Application is already running with PID $(cat $PID_FILE)."

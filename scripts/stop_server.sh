@@ -1,7 +1,7 @@
 ﻿#!/bin/bash
 set -e
 
-echo "Stopping ASP.NET Core Web API..."
+echo "Stopping ASP.NET Core Web API...."
 
 PID=$(pgrep -f "Content.Manager.Core.WebApi.dll")
 
