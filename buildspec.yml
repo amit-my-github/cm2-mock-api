@@ -11,18 +11,21 @@ phases:
       dotnet: 7.0
     commands:
       - echo Using built-in .NET SDK 7.0
+
   build:
     commands:
       - echo Building the ASP.NET Core Web API...
       - dotnet restore Content.Manager.Core.WebApi.csproj
-      - dotnet publish Content.Manager.Core.WebApi.csproj -c Release -o output
-      - mkdir -p output/scripts
-      - cp scripts/*.sh output/scripts/
+      - dotnet publish Content.Manager.Core.WebApi.csproj -c Release -o .
+      - echo Copying scripts...
+      - mkdir -p scripts
+      - cp scripts/*.sh ./scripts/
+
   post_build:
     commands:
       - echo Build completed on `date`
-      - chmod +x output/scripts/*.sh
+      - chmod +x scripts/*.sh
 
 artifacts:
-    files:
+  files:
     - '**/*'
