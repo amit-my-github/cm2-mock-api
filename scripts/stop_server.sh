@@ -2,7 +2,7 @@
 set -e
 
 echo "Stopping ASP.NET Core Web API...."
-
+echo "Running as: $(whoami)"
 PID=$(pgrep -f "Content.Manager.Core.WebApi.dll")
 
 if [ -n "$PID" ]; then
