@@ -1,22 +1,30 @@
 ﻿#!/bin/bash
+set -e
 
 echo "Stopping ASP.NET Core Web API..."
 
-# Find the process ID of your app
 PID=$(pgrep -f "Content.Manager.Core.WebApi.dll")
 
 if [ -n "$PID" ]; then
     echo "Stopping process with PID: $PID"
     kill $PID
 
-    # Wait for process to stop
-    sleep 5
+    # Wait up to 10 seconds for graceful shutdown
+    for i in {1..10}; do
+        if ! ps -p $PID > /dev/null; then
+            echo "Process stopped gracefully."
+            # Remove PID file if exists
+            [ -f /var/run/myapp.pid ] && rm /var/run/myapp.pid
+            exit 0
+        fi
+        sleep 1
+    done
 
-    # Force kill if still running
-    if ps -p $PID > /dev/null; then
-        echo "Force killing process $PID"
-        kill -9 $PID
-    fi
+    echo "Process still running, force killing PID $PID"
+    kill -9 $PID
+
+    # Cleanup PID file
+    [ -f /var/run/myapp.pid ] && rm /var/run/myapp.pid
 else
     echo "No running process found for Content.Manager.Core.WebApi.dll"
 fi
