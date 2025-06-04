@@ -24,6 +24,5 @@ phases:
       - chmod +x output/scripts/*.sh
 
 artifacts:
-  base-directory: output
-  files:
+    files:
     - '**/*'
