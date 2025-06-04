@@ -1,15 +1,9 @@
 ﻿version: 0.0
 os: linux
 files:
-  - source: /output/
+  - source: /
     destination: /var/www/myapp/
 hooks:
   AfterInstall:
-    - location: scripts/install_dependencies.sh
+    - location: scripts/test_marker.sh
       runas: root
-  ApplicationStart:
-    - location: scripts/start_server.sh
-      runas: ubuntu
-  ApplicationStop:
-    - location: scripts/stop_server.sh
-      runas: ubuntu
