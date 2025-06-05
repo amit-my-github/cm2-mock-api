@@ -20,10 +20,12 @@ phases:
       - echo Copying scripts...
       - mkdir -p output/scripts
       - cp scripts/*.sh output/scripts/
+      - echo Copying appspec.yml...
+      - cp appspec.yml output/
 
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo "Build completed on $(date)"
       - chmod +x output/scripts/*.sh
 
 artifacts:
