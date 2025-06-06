@@ -11,37 +11,39 @@ phases:
       dotnet: 7.0
     commands:
       - echo Using built-in .NET SDK 7.0
-      - echo Ensuring clean output directory...
-      - rm -rf output  # Clean previous builds
+      - echo Cleaning previous build artifacts...
+      - rm -rf output published  # Clean both directories
 
   build:
     commands:
       - echo Building the ASP.NET Core Web API...
       - dotnet restore Content.Manager.Core.WebApi.csproj
-      - dotnet publish Content.Manager.Core.WebApi.csproj -c Release -o published
+      
+      # Publish to temporary directory (exclude scripts)
+      - dotnet publish Content.Manager.Core.WebApi.csproj -c Release -o temp_publish
       
       # Create clean output structure
       - mkdir -p output/published
       - mkdir -p output/scripts
       
-      # Move published files (using rsync for reliability)
-      - rsync -a published/ output/published/
+      # Move only .NET publish files (exclude scripts)
+      - find temp_publish -type f \( -name "*.sh" -o -name "appspec.yml" \) -delete
+      - rsync -a temp_publish/ output/published/
       
-      # Copy and permission scripts
+      # Copy scripts from source (not from publish directory)
       - chmod +x scripts/*.sh
       - cp scripts/*.sh output/scripts/
       
-      # Copy appspec.yml
+      # Copy appspec.yml from source
       - cp appspec.yml output/
       
-      # Verify structure
-      - echo "Final artifact structure:"
-      - tree output || ls -R output
+      # Cleanup
+      - rm -rf temp_publish
 
   post_build:
     commands:
       - echo "Build completed on $(date)"
-      - echo "Artifact contents:"
+      - echo "Final artifact verification:"
       - find output -type f -exec ls -la {} \;
 
 artifacts:
