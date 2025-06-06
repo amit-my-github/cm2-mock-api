@@ -3,6 +3,8 @@ os: linux
 files:
   - source: published/
     destination: /var/www/myapp/
+  - source: scripts/
+    destination: /var/www/myapp/scripts
 hooks:
   BeforeInstall:
     - location: scripts/test_marker.sh
