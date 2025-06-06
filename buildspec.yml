@@ -16,13 +16,14 @@ phases:
     commands:
       - echo Building the ASP.NET Core Web API...
       - dotnet restore Content.Manager.Core.WebApi.csproj
-      - dotnet publish Content.Manager.Core.WebApi.csproj -c Release -o .
+      - dotnet publish Content.Manager.Core.WebApi.csproj -c Release -o published.
       - echo Setting script permissions...
       - chmod +x scripts/*.sh  # Set permissions before copying
       - echo Copying scripts...
+      - mkdir -p output/published
+      - mv published/* output/published/
       - mkdir -p output/scripts
       - cp scripts/*.sh output/scripts/
-      - echo Copying appspec.yml...
       - cp appspec.yml output/
 
   post_build:
