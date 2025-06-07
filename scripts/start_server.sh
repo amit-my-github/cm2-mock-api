@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 APP_PATH="/var/www/myapp/Content.Manager.Core.WebApi.dll"
 LOG_FILE="/var/log/myapp.log"
 PID_FILE="/var/run/myapp.pid"
