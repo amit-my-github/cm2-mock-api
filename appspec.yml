@@ -6,10 +6,6 @@ files:
   - source: scripts/
     destination: /var/www/myapp/scripts
 hooks:
-  BeforeInstall:
-    - location: scripts/test_marker.sh
-      timeout: 60
-      runas: root    
   AfterInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
